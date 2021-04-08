@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Datos importantes sobre nuestra web, donde se comunican el sitio web y el navegador  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Pizzeria Hot"> <!-- descripcion clara de lo que se trata nuestro sitio, 
+    descripcion para cada HTML d ela pagina ----hasta 160 caracteres-->
+    
+    <meta name="keywords" content="Pizzeria, pizza muzzarella, pizza calabreza, pizza, contacto"><!-- palabras claves que define lo que estmos exponiendo en nuestra pagina se separan con (,) -->
+    <!-- la clave es la ORIGINALIDAD -->
+    
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+
+    <!-- popins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    
+    <!--Vinculamos con CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pizza Hot / Lo sabroso se vuelve realidad</title> <!-- Clave para la busqueda, maximo 70 caracteres -->
+        <!-- Se deberia usar una etiqueta de encabezada cada 300 palabras aprox -->
+
+</head>
+<body> <!-- Cuerpo del sitio -->
+    <header >
+            <nav  id="menu" class="navbar navbar-expand-lg  ">
+                <div  class="container-fluid">
+                    <a class="navbar-brand" href="#">Pizzeria</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navegador" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre_nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <img class="logo" src="imagenes/logo.jpg" alt="Logo Pizzeria">
+
+
+    <div class="encabezado-1">
+        <h1 class="titulo-principal">¡Nuestros sabores son únicos e inigualables!</h1><!-- Lo ideal es que aparezca 1 solo h1 al principio de la estructura -->
+        <p>
+            Somos la mejor empresa en calidad y servicio porque nos preocupan las necesidades de nuestros clientes.
+            Nuestro punto clave es la creacion de pizzas que tienen un buen sabor y un precio acorde a las preferiencias de cada uno. 
+            
+
+
+        </p>
+    </div> 
+
+    <div class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/galeria-1.jpg" class="d-block w-100" alt="Pizza 1">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/galeria-2.jpg" class="d-block w-100" alt="Pizza 2">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/galeria-3.jpg" class="d-block w-100" alt="Pizza 3">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+   
+
+    <p class="parrafo-nosotros "> <!--La clase tiene que decir de que se trata o a que hace referencia-->
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente similique architecto, sit quis a fuga tenetur! Voluptatibus soluta quos placeat libero 
+        maiores sequi blanditiis nam veniam repudiandae unde, porro sapiente.
+    </p> 
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div id="footer-container">
+
+            <div class="navegacion-footer">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a  href="index.html">Inicio </a></li>
+                    
+                    <li><a  href="productos.html" target="_blank">Productos</a></li>
+
+
+                    <li><a  href="sobre_nosotros.html" target="_blank">Nosotros</a></li>
+
+                    <li><a  href="contacto.html" target="_blank">Contacto </a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="contactanos-footer">
+                <h4>Contactanos</h4>
+                <h5>Av.Rivadavia 7900</h5>
+                <iframe class="google-maps-footer"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13128.530394415739!2d-58.51089703247968!3d-34.65135406752633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9a9efb944ad%3A0x6247bf5f2d9383c7!2sAv.%20Juan%20Bautista%20Alberdi%20%26%20Larraz%C3%A1bal%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1613150416310!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" 
+                style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>
+                <h5> 1137025735</h5>
+                <h5>pizzahot@gmail.com</h5>
+            </div>
+    
+
+            <div class="redes-footer" >
+                <h4>Seguinos en</h4>
+                <a 
+                    href="https://www.facebook.com/juli.quispe.359" target="blank">
+                    <img src="imagenes/Iconos/facebook.png" alt="Facebook">
+                </a>
+                <a 
+                    href="https://www.instagram.com/" target="blank">
+                    <img src="imagenes/Iconos/instagram.png" alt="Instagram">
+                </a>
+                <a 
+                    href="https://www.youtube.com/channel/UCoNp-l1DMGY58sjHlCzCG0g" target= "blank">
+                    <img src="imagenes/Iconos/youtube.png" alt="YouTube">
+                </a>
+                <a 
+                    href="https://twitter.com/login?lang=es" target="blank">
+                    <img src="imagenes/Iconos/twitter.png" alt="Twitter">
+                </a>
+                <a 
+                    href="https://web.whatsapp.com/" target="blank">
+                    <img src="imagenes/Iconos/whatsapp.png" alt="WhatsApp">
+
+                </a>
+            </div>
+           
+
+     
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* PARRAFO DE PRESENTACION */
+.encabezado-1{
+    
+    font-size: 20px; /* Tamaño */
+    color: rgb(255, 255, 255);
+    line-height: 40px;/* Espacio entre linas  */  
+    font-family: 'Asap', sans-serif;
+    background-color: hsl(0, 69%, 32%);
+    padding: 80px;
+    
+   
+    
+}
+
+/* Clase: solo se lo vamos aplicar al parrafo */
+.encabezado-1 .titulo-principal {
+  
+    font-size: 50px;
+    font-family:'Kaushan Script', cursive ;
+    padding-bottom: 30px;
+    
+   
+}

@@ -1,0 +1,105 @@
+/***************************** Productos: Catalogo de productos****************/
+
+
+
+
+.titulo-productos{
+    font-size:50px;
+    font-family:'Kaushan Script', cursive ;
+    text-align: center;
+    color:red;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-weight: 100px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+
+    
+    
+} 
+
+.container-card{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    border: black solid 2px;
+    margin-bottom: 5%;
+    transition: all 1s;
+
+    &:hover{
+        transform: scale(1.1);
+
+
+    }
+    
+    
+}
+
+.card-body{
+    padding: 15px;
+}
+
+
+.card-img-top{
+    width: 100%;
+    height: auto;
+   /*  transition: all 1s;
+
+    &:hover{
+        transform: scale(1.1);
+     
+    }  */
+
+}
+
+
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 3;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* transfrom:  /* El tiempo que tarda en transformarse el elemento  */ 
+
+/* .container .card{
+    width: 340px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 2px rgba(0, 0,0, 0.2);
+    overflow:inherit;
+    margin: 20px;
+    text-align: center;
+    transition: 0.25s;
+    padding-bottom: 400px;
+
+} 
+ .flex-container .cards img{
+    width: auto;
+    height: 150px;
+    transition: all 1s; 
+}
+
+
+.flex-container .cards h2{
+    font-weight: 600px;
+    
+}
+
+
+
+*/

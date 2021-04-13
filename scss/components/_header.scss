@@ -1,0 +1,53 @@
+/* MENU DE NAVEGACION: */
+#menu{
+    background-color:black;
+}
+
+
+.navegador{
+    display: flex;
+    justify-content: flex-end;
+
+    top: 0px;
+    right: 0px;
+}
+
+.navbar-nav{
+    list-style: none;
+    display: flex;
+
+    .nav-link{
+        font-size: 20px; 
+        color: blanchedalmond;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px 10px;
+       
+        &:hover{
+            background-color:brown;
+            border-radius: 1px;
+        
+            .active{
+                background-color:brown;
+            }
+        }
+
+    }  
+    
+}
+
+header{
+   
+
+    /* LOGO: */
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        /* margin-top: auto;  */
+        /* width: auto;
+        height: 566.5px; */
+    
+       
+    }
+}
+
+

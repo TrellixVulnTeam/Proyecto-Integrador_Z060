@@ -1,0 +1,136 @@
+/* ******************************************** CONTACTOS ********************************* */
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    
+    flex-direction:row;/* para  que este separado en filas */
+    
+
+   
+}
+.container .contacto .ubicacion, 
+.container .contacto .horarios,
+.container .contacto .telefonos 
+{
+    align-content: space-around;
+    margin-right:45px;
+    text-align: center;
+    border: 3px solid transparent;
+    align-items: center;
+    
+}
+.container .contacto .ubicacion img,
+.container .contacto .horarios img,
+.container .contacto .telefonos img
+{
+    width: auto;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    
+}
+.container .contacto .ubicacion p,
+.container .contacto .horarios p,
+.container .contacto .telefonos p{
+    text-align: center;
+    align-items: center;
+  
+    
+}
+
+.maps{
+    width: 800px;
+    height: 450px;
+    padding-top:50px ;
+    padding-bottom:50px;
+
+}
+.google-maps{
+   
+   display: flex;
+   justify-content: center;
+    
+}
+
+/************ FORMULARIO **********/
+.caja-formulario{
+    color: #5D6063;
+    background-color: yellow;
+    font-family:'Asap', sans-serif ;
+    font-size: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.formulario{
+    /* text-align: center; */
+    background-color: #F6F7F8;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 80%;
+    margin: 40PX 0;
+    padding: 50px;
+}
+
+
+.formulario h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.formulario .espacio{
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+
+
+.form-row label{
+    display: block;
+}
+
+
+/* aclaramos que tipo de input */
+.form-row input[type="text"],
+.form-row input[type="email"]
+
+{
+    background-color: #fff;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 75%;
+    padding: 7px;
+
+}
+
+/* Para que no se olviden de completar los campos obligatorios */
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid{
+    border: 2px solid red;
+}
+
+.form-row textarea{
+    resize: none;/* para que el usuario no cambie el tamaño de la caja */
+    min-height: 200px;
+    width: 50%;
+}
+
+.button-enviar{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: sandybrown;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor:pointer;
+}
+.button-enviar:hover{
+    background-color: orange;
+
+}
+.button-enviar:active{
+    background-color:red;
+}

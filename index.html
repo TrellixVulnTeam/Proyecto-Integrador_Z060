@@ -31,13 +31,15 @@
     
     
     <!--Vinculamos con CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Pizza Hot / Lo sabroso se vuelve realidad</title> <!-- Clave para la busqueda, maximo 70 caracteres -->
         <!-- Se deberia usar una etiqueta de encabezada cada 300 palabras aprox -->
 
 </head>
 <body> <!-- Cuerpo del sitio -->
+
+<!----------------------------------------------- _header.scss ---------------------------------------------------------------------------------------------------------------------->
     <header >
             <nav  id="menu" class="navbar navbar-expand-lg  ">
                 <div  class="container-fluid">
@@ -45,37 +47,37 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse navegador" id="navbarNav">
+                    <div class="navegador collapse navbar-collapse " id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="productos.html">Productos</a>
+                                <a class="nav-link" href="#">Productos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="sobre_nosotros.html">Nosotros</a>
+                                <a class="nav-link" href="#">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
+                                <a class="nav-link" href="#">Contacto</a>
                             </li>
                         
                         </ul>
                     </div>
                 </div>
             </nav>
+
+            <img src="imagenes/logo.jpg" alt="Logo Pizzeria">
     </header>
-    <img class="logo" src="imagenes/logo.jpg" alt="Logo Pizzeria">
+    
 
-
+<!-- ******************************* _presentación.scss ***************************************************************************************** -->
     <div class="encabezado-1">
         <h1 class="titulo-principal">¡Nuestros sabores son únicos e inigualables!</h1><!-- Lo ideal es que aparezca 1 solo h1 al principio de la estructura -->
         <p>
             Somos la mejor empresa en calidad y servicio porque nos preocupan las necesidades de nuestros clientes.
             Nuestro punto clave es la creacion de pizzas que tienen un buen sabor y un precio acorde a las preferiencias de cada uno. 
             
-
-
         </p>
     </div> 
 
@@ -115,11 +117,495 @@
     </p> 
 
 
+<!------------------------------- _catalogo.scss ------------------------------------------------------->
+<section id="catalogo">
+    <h2 class="titulo-catalogo">Nuestro Menú</h2>
+    
+ 
+        <div class="container-card">
+                
+            <div class="card" style="width: 18rem;">
+                <img src="imagenes/pizza-de-tomate.jpg" class="card-img-top" alt="Pizza 1">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Ver más
+                </button>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="imagenes/pizza-muzzarella.jpg" class="card-img-top" alt="Pizza">
+                <div class="card-body">
+                <h5 class="card-title">Pizza de calabreza</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Ver más
+                </button>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="imagenes/pizza-pepperoni.jpg" class="card-img-top" alt="Pizza">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Ver más
+                </button>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="imagenes/pizza-vegetariana.jpg" class="card-img-top" alt="Pizza">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Ver más
+                </button>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
 
-    <!-- Footer -->
+            <div class="card" style="width: 18rem;">
+                <img src="imagenes/pizza-bbq.jpg" class="card-img-top" alt="Pizza de anchoa">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card" style="width: 18rem;">
+                <img src="imagenes/pizza-1.jpg" class="card-img-top" alt="Pizza">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Ver más
+                </button>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>   
+
+        
+    </section>
+
+    <div class="suscrib">
+        <h2>SUSCRÍBETE</h2>
+        <h6>Suscríbete a nuestro boletin y no te pierdas de todas nuestras promociones</h6>
+        <form action="/SERVER/" method="POST" class="btn-suscribcion">
+                
+                    
+            <div class="input-group">
+                <input type="email" class="form-control" id="email" 
+                            aria-describedby="emailHelp" placeholder="ejemplo@gmail.com">
+                <div class="input-group-append">
+                    <button class="btn btn-danger" type="button">Suscribirme</button>
+                </div>
+            </div>
+                    
+                
+        </form>
+        
+    </div>
+
+<!---------------------------------------- _nosotros.scss -------------------------------------------------------->
+        <main>
+            <h1>SOBRE NOSOTROS</h1>
+             <div class="container">
+                    <div class="row ingredientes">
+                        <div class="col">
+                            <p class="ingredientes-p">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente similique architecto, sit quis a fuga tenetur! Voluptatibus soluta quos placeat libero 
+                                maiores sequi blanditiis nam veniam repudiandae unde, porro sapiente.
+                        
+                            </p>
+                        </div>
+                        <div class="col order">
+                            <img class="ingredientes-img " src="imagenes/ingredientes.jpg" alt="Ingredientes">
+                        </div>
+                    
+                    </div>
+           
+                    <div class="row horno">
+                        <div class="col">
+                            <img class="horno-img"src="imagenes/horno-de-barro.jpg" alt="Horno de barro">
+                        </div>
+                        <div class="col order horno-p">
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Ea voluptatum natus sequi a repudiandae aliquid necessitatibus 
+                                recusandae ex tempore rerum, autem, incidunt sunt quia. Inventore 
+                                cupiditate tenetur illum magnam voluptas.
+                            </p>
+                        </div>
+                    
+                    </div>
+            </div>
+            
+            <!-- <section class="grupo our-team">
+                <h2 class="grupo-titulo">Nuestro Equipo</h2>
+                <div class="container container-flex">
+                    <div class="row">
+                        <div class="col col-33">
+                            <h3 class="our-team-titulo">Alfonso</h3>
+                            <img src="imagenes/chef-1.jpg" alt="" class="our-team-img">
+                            <p class="our-team-txt">
+                                Lorem ipsum dolor sit amet consectetur 
+                                adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                                doloremque nulla eius eum quis et velit fugit aut?
+                            </p>
+        
+                        </div>
+                    </div>
+                    
+                    <div class="column column-33">
+                        <h3 class="our-team-titulo">Santiago</h3>
+                        <img src="" alt="" class="our-team-img">
+                        <p class="our-team-txt">Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                            doloremque nulla eius eum quis et velit fugit aut?
+                        </p>
+        
+                    </div>
+                    
+                    <div class="column column-33">
+                        <h3 class="our-team-titulo">Lucia</h3>
+                        <img src="" alt="" class="our-team-img">
+                        <p class="our-team-txt">
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                            doloremque nulla eius eum quis et velit fugit aut?
+                        </p>
+        
+                    </div>
+                    <div class="column column-33">
+                        <h3 class="our-team-titulo">Mateo</h3>
+                        <img src="" alt="" class="our-team-img">
+                        <p class="our-team-txt">
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                            doloremque nulla eius eum quis et velit fugit aut?
+                        </p>
+        
+                    </div>
+                    <div class="column column-33">
+                        <h3 class="our-team-titulo">Rodolfo</h3>
+                        <img src="" alt="" class="our-team-img">
+                        <p class="our-team-txt">
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                            doloremque nulla eius eum quis et velit fugit aut?
+                        </p>
+        
+                    </div>
+                    <div class="column column-33">
+                        <h3 class="our-team-titulo">Julian</h3>
+                        <img src="" alt="" class="our-team-img">
+                        <p class="our-team-txt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas obcaecati placeat labore dignissimos ipsa fugit, vero ex soluta assumenda iusto voluptate vel perferendis iure.
+                             Molestiae ullam suscipit consequuntur vitae provident!
+                            </p>
+        
+                    </div>
+                    <div class="column column-33">
+                        <h3 class="our-team-titulo">Agustin</h3>
+                        <img src="" alt="" class="our-team-img">
+                        <p class="our-team-txt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat assumenda nihil, quae veniam enim velit nulla reiciendis obcaecati ipsam saepe, dolore, optio mollitia. 
+                            Cupiditate molestiae natus adipisci sed corporis magnam.
+                        </p>
+        
+                    </div>
+                    <div class="column column-33">
+                        <h3 class="our-team-titulo">Hernan</h3>
+                        <img src="" alt="" class="our-team-img">
+                        <p class="our-team-txt">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, pariatur ad. Maiores, quas, praesentium reprehenderit suscipit illo repellendus dolores dolorem iusto repudiandae distinctio 
+                            ullam molestiae quia ratione excepturi voluptatibus amet!
+                        </p>
+        
+                    </div>
+        
+        
+                </div> -->
+                <div class="d-flex justify-content-around">
+                    <div class="p-2">
+                        
+                        <h3 class="our-team-titulo">Alfonso</h3>
+                        <img src="imagenes/chef-1.jpg" alt="" class="our-team-img">
+                        <p class="our-team-txt">
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                            doloremque nulla eius eum quis et velit fugit aut?
+                        </p>
+                    </div>
+                    <div class="p-2">
+                        <h3 class="our-team-titulo">Alfonso</h3>
+                        <img src="imagenes/chef-1.jpg" alt="" class="our-team-img">
+                        <p class="our-team-txt">
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                            doloremque nulla eius eum quis et velit fugit aut?
+                        </p>
+                    </div>
+                    <div class="p-2">
+                        <h3 class="our-team-titulo">Alfonso</h3>
+                        <img src="imagenes/chef-1.jpg" alt="" class="our-team-img">
+                        <p class="our-team-txt">
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                            doloremque nulla eius eum quis et velit fugit aut?
+                        </p>
+                    </div>
+                  </div>
+                  
+                  <!-- responsive variations -->
+                  <div class="d-flex justify-content-sm-around">
+                    
+                  </div>
+                  <div class="d-flex justify-content-md-around">...</div>
+                  <div class="d-flex justify-content-lg-around">...</div>
+                  <div class="d-flex justify-content-xl-around">...</div>
+                  
+        
+        
+        
+            </section>
+              
+              <!-- responsive variations -->
+            <div class="col order-sm-3"><!-- Ordered column --></div>
+            <div class="col order-md-3"><!-- Ordered column< --></div>
+            <div class="col order-lg-3"><!-- Ordered column --></div>
+            <div class="col order-xl-3"><!-- Ordered column --></div>
+        
+            
+           
+        </main>  
+<!---------------------------------- _contacto.scc ---------------------------------------------------------------------------------->
+
+    <h1>CONTACTO</h1>
+    <secccion class="container">
+        <div class="contacto">
+
+            <div class="ubicacion">
+                <img src="imagenes/Iconos/ubicacion.png" alt="Ubicación">
+                <p>Av.Rivadavia 7900, Caballito, Buenos Aires, Argentina</p>
+            </div>
+            <div class="horarios">
+                <img src="imagenes/Iconos/tienda.png" alt="Horarios">
+                <p>Martes a Viernes de 10 a 23:30 hs</p>
+                <p>Sábados y Domingos de 10 a 01 hs</p>
+            </div>
+            <div class="telefonos">
+                <img src="imagenes/Iconos/telefono.png" alt="Teléfonos">
+                <p>(011) 37025735</p>
+                <p>(011) 61929134</p>
+                <p>pizzahot@gmail.com</p>
+            </div>
+        </div>
+    </secccion>   
+    
+    <!-- Mapa de google maps --> 
+    <div class="google-maps">
+        <iframe  class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13128.530394415739!2d-58.51089703247968!3d-34.65135406752633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9a9efb944ad%3A0x6247bf5f2d9383c7!2sAv.%20Juan%20Bautista%20Alberdi%20%26%20Larraz%C3%A1bal%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1613150416310!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" 
+            style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+    </div>
+
+
+    <!-- FORMULARIO -->
+    <div class="caja-formulario">
+        <h2>Contactanos</h2>
+        <p>Dejanos tu consulta y responderemos a la brevedad</p>
+        <!-- input: es un campo de entrada -->
+        <form action="/SERVER/" method="POST" class="formulario">
+            <div class="form-row">
+                <label class="espacio" for="nameInput">Nombre</label>
+                <input type="text" id="nameInput" aria-describedby="nameHelp" placeholder="Ingresa tu nombre">
+
+            </div>
+
+            <div class="form-row">
+                <label class="espacio" for="email">Email</label>
+                <input type="email" class="form-control" id="email" 
+                        aria-describedby="emailHelp" placeholder="ejemplo@gmail.com">
+
+            </div>
+
+            <div class="form-row">
+                <label class="espacio" for="asunto">Asunto</label>
+                <input type="text" class="form-control" id="asunto" 
+                        aria-describedby="asuntoHelp" placeholder="Asunto">
+
+            </div>
+
+            <div class="form-row"><!-- cols y row es la medida de mi cajita -->
+                <label class="espacio" for="area">Mensaje</label>
+                <textarea  id="area" cols="30" rows="10" placeholder="Escribenos aqui tu mensaje"></textarea>
+
+            </div>
+
+            <div>
+                <label class="espacio" for="checkbox">Deseo recibir notificaciones de las promociones</label>
+                <input type="checkbox"  id="checkbox">
+            </div>
+            
+            <div >
+                <button class=" button-enviar espacio" type="submit">Enviar </button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--------------------------------------------------------- _footer.scss ------------------------>
     <footer>
 
         <div id="footer-container">
@@ -127,14 +613,14 @@
             <div class="navegacion-footer">
                 <h4>Navegación</h4>
                 <ul>
-                    <li><a  href="index.html">Inicio </a></li>
+                    <li><a  href="/">Inicio </a></li>
                     
-                    <li><a  href="productos.html" target="_blank">Productos</a></li>
+                    <li><a  href="productos.html">Productos</a></li>
 
 
-                    <li><a  href="sobre_nosotros.html" target="_blank">Nosotros</a></li>
+                    <li><a  href="#">Nosotros</a></li>
 
-                    <li><a  href="contacto.html" target="_blank">Contacto </a></li>
+                    <li><a  href="#">Contacto </a></li>
                     
                 </ul>
             </div>

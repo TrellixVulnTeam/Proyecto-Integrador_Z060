@@ -181,21 +181,23 @@ header img {
 }
 
 /* nuestro equipo */
-/* .our-team{
-    text-align: center;
-    margin-bottom: 20px;
+.our-team {
+  text-align: center;
+  margin-bottom: 20px;
 }
-.our-team  .container-flex{
-    align-items: flex-start;
 
+.our-team .container-flex {
+  align-items: flex-start;
 }
-.our-team-titulo{
-    font-family: 'Pacifico', cursive;
-    color: #DE423A;
-    font-weight: bold;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}*/
+
+.our-team-titulo {
+  font-family: "Pacifico", cursive;
+  color: #DE423A;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
 .our-team-titulo {
   text-align: center;
   font-family: "Pacifico", cursive;
@@ -262,8 +264,6 @@ header img {
   background-color: #8a1919;
   padding: 80px;
 }
-
-/* Clase: solo se lo vamos aplicar al parrafo */
 .encabezado-1 .titulo-principal {
   font-size: 50px;
   font-family: "Kaushan Script", cursive;
@@ -271,14 +271,14 @@ header img {
 }
 
 #catalogo {
-  background-color: orangered;
+  background-color: coral;
 }
 
 .titulo-catalogo {
   font-size: 50px;
   font-family: "Kaushan Script", cursive;
   text-align: center;
-  color: coral;
+  color: black;
   margin-top: 100px;
   margin-bottom: 50px;
   font-weight: 100px;

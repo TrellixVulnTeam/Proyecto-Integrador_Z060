@@ -36,9 +36,6 @@
   background-color: brown;
 }
 
-header {
-  /* LOGO: */
-}
 header img {
   max-width: 100%;
   max-height: 100%;
@@ -248,9 +245,9 @@ header img {
     padding: 20px 40px;
 } */
 .carousel-container {
-  width: 1000px;
-  height: 800px;
-  padding: 100px;
+  max-width: auto;
+  /* height: 800px;
+  padding: 100px; */
 }
 
 /* PARRAFO DE PRESENTACION */
@@ -333,31 +330,76 @@ header img {
   flex-direction: row;
   /* para  que este separado en filas */
 }
-
-.container .contacto .ubicacion,
-.container .contacto .horarios,
-.container .contacto .telefonos {
+.contacto .ubicacion {
   align-content: space-around;
   margin-right: 45px;
   text-align: center;
   border: 3px solid transparent;
   align-items: center;
 }
-
-.container .contacto .ubicacion img,
-.container .contacto .horarios img,
-.container .contacto .telefonos img {
+.contacto .ubicacion img {
+  width: auto;
+  height: 50px;
+  margin: auto;
+  position: relative;
+}
+.contacto .ubicacion p {
   width: auto;
   height: 50px;
   margin: auto;
   position: relative;
 }
 
-.container .contacto .ubicacion p,
-.container .contacto .horarios p,
-.container .contacto .telefonos p {
+.contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  /* para  que este separado en filas */
+}
+.contacto .horarios {
+  align-content: space-around;
+  margin-right: 45px;
   text-align: center;
+  border: 3px solid transparent;
   align-items: center;
+}
+.contacto .horarios img {
+  width: auto;
+  height: 50px;
+  margin: auto;
+  position: relative;
+}
+.contacto .horarios p {
+  width: auto;
+  height: 50px;
+  margin: auto;
+  position: relative;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  /* para  que este separado en filas */
+}
+.contacto .telefonos {
+  align-content: space-around;
+  margin-right: 45px;
+  text-align: center;
+  border: 3px solid transparent;
+  align-items: center;
+}
+.contacto .telefonos img {
+  width: auto;
+  height: 50px;
+  margin: auto;
+  position: relative;
+}
+.contacto .telefonos p {
+  width: auto;
+  height: 50px;
+  margin: auto;
+  position: relative;
 }
 
 .maps {
@@ -392,12 +434,10 @@ header img {
   margin: 40PX 0;
   padding: 50px;
 }
-
 .formulario h1 {
   font-size: 30px;
   margin-bottom: 20px;
 }
-
 .formulario .espacio {
   margin-top: 10px;
   margin-bottom: 7px;
@@ -440,12 +480,10 @@ header img {
   padding: 10px 40px;
   cursor: pointer;
 }
-
 .button-enviar:hover {
   background-color: orange;
 }
-
-.button-enviar:active {
+.button-enviar :active {
   background-color: red;
 }
 

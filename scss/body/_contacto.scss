@@ -1,43 +1,99 @@
 /* ******************************************** CONTACTOS ********************************* */
 
+
+
+
 .contacto{
+        display: flex;
+        justify-content: center;
+        
+        flex-direction:row;/* para  que este separado en filas */
+    
+
+        .ubicacion{
+            align-content: space-around;
+            margin-right:45px;
+            text-align: center;
+            border: 3px solid transparent;
+            align-items: center;
+            img{
+                width: auto;
+                height: 50px;
+                margin: auto;
+                position: relative;
+            }
+            p{
+                width: auto;
+                height: 50px;
+                margin: auto;
+                position: relative;
+            }
+    
+        }
+    
+}
+
+
+ .contacto{
     display: flex;
     justify-content: center;
     
     flex-direction:row;/* para  que este separado en filas */
-    
 
-   
-}
-.container .contacto .ubicacion, 
-.container .contacto .horarios,
-.container .contacto .telefonos 
-{
-    align-content: space-around;
-    margin-right:45px;
-    text-align: center;
-    border: 3px solid transparent;
-    align-items: center;
+        .horarios{
+            align-content: space-around;
+            margin-right:45px;
+            text-align: center;
+            border: 3px solid transparent;
+            align-items: center;
+            img{
+                width: auto;
+                height: 50px;
+                margin: auto;
+                position: relative;
+            }
+            p{
+                width: auto;
+                height: 50px;
+                margin: auto;
+                position: relative;
+            }
+    
+        }
     
 }
-.container .contacto .ubicacion img,
-.container .contacto .horarios img,
-.container .contacto .telefonos img
-{
-    width: auto;
-    height: 50px;
-    margin: auto;
-    position: relative;
+
+
+ .contacto{
+    display: flex;
+    justify-content: center;
+    
+    flex-direction:row;/* para  que este separado en filas */
+        .telefonos{
+            align-content: space-around;
+            margin-right:45px;
+            text-align: center;
+            border: 3px solid transparent;
+            align-items: center;
+            img{
+                width: auto;
+                height: 50px;
+                margin: auto;
+                position: relative;
+            }
+            p{
+                width: auto;
+                height: 50px;
+                margin: auto;
+                position: relative;
+            }
+    
+        }
     
 }
-.container .contacto .ubicacion p,
-.container .contacto .horarios p,
-.container .contacto .telefonos p{
-    text-align: center;
-    align-items: center;
-  
-    
-}
+
+
+
 
 .maps{
     width: 800px;
@@ -73,17 +129,18 @@
     width: 80%;
     margin: 40PX 0;
     padding: 50px;
+
+    h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .espacio{
+        margin-top: 10px;
+        margin-bottom: 7px;
+    }
 }
 
-
-.formulario h1{
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-.formulario .espacio{
-    margin-top: 10px;
-    margin-bottom: 7px;
-}
 
 
 
@@ -126,11 +183,14 @@
     border-radius: 3px;
     padding: 10px 40px;
     cursor:pointer;
-}
-.button-enviar:hover{
-    background-color: orange;
 
+    &:hover{
+        background-color: orange;
+    
+    }
+    :active{
+        background-color:red;
+    }
 }
-.button-enviar:active{
-    background-color:red;
-}
+
+

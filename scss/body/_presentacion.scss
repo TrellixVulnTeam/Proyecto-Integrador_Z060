@@ -1,21 +1,43 @@
 /* PARRAFO DE PRESENTACION */
 .encabezado-1{
     
-    font-size: 20px; /* Tamaño */
-    color: rgb(255, 255, 255);
-    line-height: 40px;/* Espacio entre linas  */  
+    font-size: 18px; /* Tamaño */
+   /*  color: rgb(255, 255, 255); */
+   color:black;
+   /*  line-height: 40px; *//* Espacio entre linas  */  
     font-family: 'Asap', sans-serif;
-    background-color: hsl(0, 69%, 32%);
-    padding: 80px;
+   /*  background-color: hsl(0, 69%, 32%); */
+    padding: 50px;
     
     .titulo-principal {
   
-        font-size: 50px;
+        font-size: 25px;
         font-family:'Kaushan Script', cursive ;
         padding-bottom: 30px;
+        text-align:center;
+
+
         
        
     }
    
+    
+}
+
+.carousel-container{
+    max-width: auto;
+    max-height: auto;
+    /* height: 800px;*/
+    /* margin: 50px; */ 
+}
+
+.parrafo-nosotros{
+    
+    font-family:'Asap', sans-serif; 
+    font-size: 18px;
+    text-align: center;
+    color:black;
+    line-height: 30px;
+    /* padding: 50px; */
     
 }

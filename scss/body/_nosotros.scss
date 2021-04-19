@@ -1,17 +1,17 @@
 /* ********************* NOSOTROS************************************ */
 
 
-.horno-img, .ingredientes-img{
+/* .horno-img, .ingredientes-img{
    
     max-width: auto;
-    height: 270px;
+    height: 270px; */
     /* margin-top: 10%; */
     /* margin-left: 5%; */
    /*  padding-left: 10px; */
   
 
-}
-.ingredientes{
+
+/* .ingredientes{
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -25,28 +25,40 @@
 .horno-p{
    padding-right: 50px;
   
-  
-}
+   */
+
 
 
 
 /* nuestro equipo */
-.our-team{
+
+/* grid se habilita */
+    /* Cuantas columnas y cuanto mide cada una */
+    /* grid-template-columns: auto auto auto; */
+    /* Cuantas filas y cuanto mide cada una */
+   /*  grid-template-rows: auto auto auto;  */
+
+
+
+
+
+
+/* .our-team{
     text-align: center;
     margin-bottom: 20px;
 }
 .our-team  .container-flex{
     align-items: flex-start;
 
-}
-.our-team-titulo{
+} */
+/* .team-titulo{
     font-family: 'Pacifico', cursive;
     color: #DE423A;
     font-weight: bold;
     font-size: 1.8em;
     margin-bottom: 10px;
-}
-.our-team-titulo{
+} */
+.team-titulo{
     text-align: center;
     font-family: 'Pacifico', cursive;
     color: #DE423A;
@@ -54,55 +66,36 @@
     font-size: 1.8em;
     margin-bottom: 10px;
 }
-.our-team-img{
+.team-img{
     display: block;
     width: 200px;
     height: 200px;
     object-fit: cover; /* sire para que no se distorcionen las imagenes */
     border-radius: 50%;
-    margin: auto;
+    /* margin: auto; */
     margin-bottom: 20px;
 }
-.our-team-txt{
-    padding: 10px;
+.team-txt{
+    /* padding: 10px; */
     text-align: justify;/* para qur todo este centrado el texto*/
 }
 
-@media screen and (min-width:480px) {
+/* @media screen and (min-width:480px) {
     .our-team-img{
         width: 150px;
         height: 150px;
     }
-}
-
-/* PARRAFO QUE HABLA SOBRE "NOSOTROS" */
-.parrafo-nosotros{
-    text-align: center; /* texto alineado */
-    font-family:'Asap', sans-serif; 
-    font-size: 20px;
-    color:black;
-    line-height: 30px;
-    padding: 50px;
-    
-}
+} */
 
 
 
 
 
 
-/* CARRUSEL DE IMAGENES */
-/* .carrusel-imagenes{
-    width: 800px;/* ancho */
- /*    height: 600px;
-    padding: 20px 40px;
-} */ 
 
 
 
-.carousel-container{
-    max-width: auto;
-    /* height: 800px;
-    padding: 100px; */
-}
+
+
+
 

@@ -26,9 +26,8 @@
     
     <!-- Bootstrap -->
    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     
     <!--Vinculamos con CSS-->
     <link rel="stylesheet" href="css/style.css">
@@ -41,84 +40,91 @@
 
 <!----------------------------------------------- _header.scss ---------------------------------------------------------------------------------------------------------------------->
     <header >
-            <nav  id="menu" class="navbar navbar-expand-lg  ">
-                <div  class="container-fluid">
-                    <a class="navbar-brand" href="#">Pizzeria</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navegador collapse navbar-collapse " id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
-                        
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <nav id="menu" class="navbar navbar-expand-lg ">
+            <div  class="container-fluid">
+                <a class="navbar-brand" href="#">Pizzeria</a>
+                <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span  class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navegador collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="index.html">Inicio 
+                                <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
 
-            <img src="imagenes/logo.jpg" alt="Logo Pizzeria">
+                        
+                    </ul>
+                </div>
+           </div>
+        </nav>
+          
+            <div>
+                <img src="imagenes/logo.jpg" alt="Logo Pizzeria">
+            </div>
+           
     </header>
     
 
 <!-- ******************************* _presentación.scss ***************************************************************************************** -->
-    <div class="encabezado-1">
+    <div class="container encabezado-1">
         <h1 class="titulo-principal">¡Nuestros sabores son únicos e inigualables!</h1><!-- Lo ideal es que aparezca 1 solo h1 al principio de la estructura -->
-        <p>
-            Somos la mejor empresa en calidad y servicio porque nos preocupan las necesidades de nuestros clientes.
+        <p class="parrafo-nosotros">
+            Somos la mejor empresa en calidad y servicio porque nos preocupan las necesidades de nuestros clientes.<br>
             Nuestro punto clave es la creacion de pizzas que tienen un buen sabor y un precio acorde a las preferiencias de cada uno. 
+            Tratamos de satisfacer a los mejores paladares de los amantes de la cocina italiana con un trato cercano y personalizado.
             
         </p>
+        <p class="parrafo-nosotros "> <!--La clase tiene que decir de que se trata o a que hace referencia-->
+            La experiencia con más de 20 años en el arte de las pizzas nos permite ofrecer las mejores combinaciones para crear pizzas con 
+            un buen gusto, esquisitez, dedicación y que proporcionen el máximo placer para los sentidos.
+        </p> 
     </div> 
-
-    <div class="carousel-container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="imagenes/galeria-1.jpg" class="d-block w-100" alt="Pizza 1">
-            </div>
-            <div class="carousel-item">
-                <img src="imagenes/galeria-2.jpg" class="d-block w-100" alt="Pizza 2">
-            </div>
-            <div class="carousel-item">
-                <img src="imagenes/galeria-3.jpg" class="d-block w-100" alt="Pizza 3">
-            </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
+    <div id="carouselExampleIndicators" class="carousel-container carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/pizzeria-5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/pizzeria-5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/pizzeria-5.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-    </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    
    
 
-    <p class="parrafo-nosotros "> <!--La clase tiene que decir de que se trata o a que hace referencia-->
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente similique architecto, sit quis a fuga tenetur! Voluptatibus soluta quos placeat libero 
-        maiores sequi blanditiis nam veniam repudiandae unde, porro sapiente.
-    </p> 
+    
 
 
 <!------------------------------- _catalogo.scss ------------------------------------------------------->
-<section id="catalogo">
+<!-- <section id="catalogo">
     <h2 class="titulo-catalogo">Nuestro Menú</h2>
     
  
@@ -133,9 +139,9 @@
                     Ver más
                 </button>
                 </div>
-            </div>
+            </div> -->
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -164,9 +170,9 @@
                     Ver más
                 </button>
                 </div>
-            </div>
+            </div> -->
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -193,9 +199,9 @@
                     Ver más
                 </button>
                 </div>
-            </div>
+            </div> -->
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -224,9 +230,9 @@
                     Ver más
                 </button>
                 </div>
-            </div>
+            </div> -->
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -256,9 +262,9 @@
                         Ver más
                     </button>
                 </div>
-            </div>
+            </div> -->
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -286,9 +292,9 @@
                     Ver más
                 </button>
                 </div>
-            </div>
+            </div> -->
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -306,10 +312,10 @@
                 </div>
             </div>
 
-        </div>   
+        </div>    -->
 
         
-    </section>
+   <!--  </section>
 
     <div class="suscrib">
         <h2>SUSCRÍBETE</h2>
@@ -329,9 +335,9 @@
         </form>
         
     </div>
-
+ -->
 <!---------------------------------------- _nosotros.scss -------------------------------------------------------->
-        <main>
+        <!-- <main>
             <h1>SOBRE NOSOTROS</h1>
              <div class="container">
                     <div class="row ingredientes">
@@ -362,7 +368,63 @@
                     
                     </div>
             </div>
-            
+            <section>
+                <div class="row team-1 ">
+                    <div class="col-lg-4 col-sm-12 col-md-6">
+                        <h3 class=" team-titulo">Alfonso</h3>   
+                        <img src="imagenes/chef-1.jpg" alt="" class="team-img">
+                        <p class="team-txt">
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                            doloremque nulla eius eum quis et velit fugit aut?
+                        </p>
+                   </div>
+                    
+                        <div class="col-lg-4 col-sm-12 col-md-6 team">
+                            <h3 class=" team-titulo">Alfonso</h3>   
+                            <img src="imagenes/chef-1.jpg" alt="" class="team-img">
+                            <p class="team-txt">
+                                Lorem ipsum dolor sit amet consectetur 
+                                adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                                doloremque nulla eius eum quis et velit fugit aut?
+                            </p>
+                        </div>
+                         
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <h3 class=" team-titulo">Alfonso</h3>   
+                                    <img src="imagenes/chef-1.jpg" alt="" class="team-img">
+                                    <p class="team-txt">
+                                        Lorem ipsum dolor sit amet consectetur 
+                                        adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                                        doloremque nulla eius eum quis et velit fugit aut?
+                                    </p>
+                                </div>
+                        
+
+                </div> -->
+                    <!-- <div class="row team-1">
+                        <h3 class="team-titulo">Alfonso</h3>   
+                        <img src="imagenes/chef-2.jpg" alt="" class="team-img">
+                        <p class="team-txt">
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                            doloremque nulla eius eum quis et velit fugit aut?
+                        </p>
+                    </div>
+
+                    <div class="row team-1">
+                        <h3 class="team-titulo">Alfonso</h3>   
+                        <img src="imagenes/chef-3.jpg" alt="" class="team-img">
+                        <p class="team-txt">
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
+                            doloremque nulla eius eum quis et velit fugit aut?
+                        </p>
+                    </div> -->
+
+
+
+                
             <!-- <section class="grupo our-team">
                 <h2 class="grupo-titulo">Nuestro Equipo</h2>
                 <div class="container container-flex">
@@ -449,7 +511,7 @@
         
         
                 </div> -->
-                <div class="d-flex justify-content-around">
+                <!-- <div class="d-flex justify-content-around">
                     <div class="p-2">
                         
                         <h3 class="our-team-titulo">Alfonso</h3>
@@ -478,33 +540,30 @@
                             doloremque nulla eius eum quis et velit fugit aut?
                         </p>
                     </div>
-                  </div>
+                  </div> -->
                   
                   <!-- responsive variations -->
-                  <div class="d-flex justify-content-sm-around">
+                  <!-- <div class="d-flex justify-content-sm-around">
                     
                   </div>
                   <div class="d-flex justify-content-md-around">...</div>
                   <div class="d-flex justify-content-lg-around">...</div>
-                  <div class="d-flex justify-content-xl-around">...</div>
+                  <div class="d-flex justify-content-xl-around">...</div> -->
                   
         
         
         
             </section>
               
-              <!-- responsive variations -->
-            <div class="col order-sm-3"><!-- Ordered column --></div>
-            <div class="col order-md-3"><!-- Ordered column< --></div>
-            <div class="col order-lg-3"><!-- Ordered column --></div>
-            <div class="col order-xl-3"><!-- Ordered column --></div>
+              
+
         
             
            
         </main>  
 <!---------------------------------- _contacto.scc ---------------------------------------------------------------------------------->
 
-    <h1>CONTACTO</h1>
+   <!--  <h1>CONTACTO</h1>
     <secccion class="container">
         <div class="contacto">
 
@@ -525,21 +584,21 @@
             </div>
         </div>
     </secccion>   
-    
+     -->
     <!-- Mapa de google maps --> 
-    <div class="google-maps">
+    <!-- <div class="google-maps">
         <iframe  class="maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13128.530394415739!2d-58.51089703247968!3d-34.65135406752633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9a9efb944ad%3A0x6247bf5f2d9383c7!2sAv.%20Juan%20Bautista%20Alberdi%20%26%20Larraz%C3%A1bal%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1613150416310!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" 
             style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>
-    </div>
+    </div> -->
 
 
     <!-- FORMULARIO -->
-    <div class="caja-formulario">
+   <!--  <div class="caja-formulario">
         <h2>Contactanos</h2>
         <p>Dejanos tu consulta y responderemos a la brevedad</p>
-        <!-- input: es un campo de entrada -->
+      
         <form action="/SERVER/" method="POST" class="formulario">
             <div class="form-row">
                 <label class="espacio" for="nameInput">Nombre</label>
@@ -559,9 +618,9 @@
                 <input type="text" class="form-control" id="asunto" 
                         aria-describedby="asuntoHelp" placeholder="Asunto">
 
-            </div>
+            </div> -->
 
-            <div class="form-row"><!-- cols y row es la medida de mi cajita -->
+            <!-- <div class="form-row">
                 <label class="espacio" for="area">Mensaje</label>
                 <textarea  id="area" cols="30" rows="10" placeholder="Escribenos aqui tu mensaje"></textarea>
 
@@ -580,7 +639,7 @@
 
 
 
-
+ -->
 
 
 
@@ -673,14 +732,18 @@
 
 
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
+    
+     <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+   
 </body>
 </html>

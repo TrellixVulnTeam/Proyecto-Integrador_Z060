@@ -289,7 +289,7 @@ header img {
   transition: all 1s;
 }
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .card-body {
@@ -317,37 +317,38 @@ header img {
   }
 }
 /* ******************************************** CONTACTOS ********************************* */
+/* .container-contact{
+    position:relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color:#fafafa;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 100%;
+    max-width: 820px;
+    height: 500px;
+    background-color: #BA324F ;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contact-info{
+    background-color: greenyellow;
+}
+.contact-form{
+    background-color: red;
+} */
 .contacto {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  /* para  que este separado en filas */
-}
-.contacto .ubicacion {
-  align-content: space-around;
-  margin-right: 45px;
-  text-align: center;
-  border: 3px solid transparent;
-  align-items: center;
-}
-.contacto .ubicacion img {
-  width: auto;
-  height: 50px;
-  margin: auto;
-  position: relative;
-}
-.contacto .ubicacion p {
-  width: auto;
-  height: 50px;
-  margin: auto;
-  position: relative;
-}
-
-.contacto {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  /* para  que este separado en filas */
 }
 .contacto .horarios {
   align-content: space-around;
@@ -363,32 +364,6 @@ header img {
   position: relative;
 }
 .contacto .horarios p {
-  width: auto;
-  height: 50px;
-  margin: auto;
-  position: relative;
-}
-
-.contacto {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  /* para  que este separado en filas */
-}
-.contacto .telefonos {
-  align-content: space-around;
-  margin-right: 45px;
-  text-align: center;
-  border: 3px solid transparent;
-  align-items: center;
-}
-.contacto .telefonos img {
-  width: auto;
-  height: 50px;
-  margin: auto;
-  position: relative;
-}
-.contacto .telefonos p {
   width: auto;
   height: 50px;
   margin: auto;
@@ -419,7 +394,7 @@ header img {
 }
 
 .formulario {
-  /* text-align: center; */
+  text-align: center;
   background-color: #F6F7F8;
   border: 1px solid #D6D9DC;
   border-radius: 3px;

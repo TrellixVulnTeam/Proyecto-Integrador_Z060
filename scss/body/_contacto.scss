@@ -34,9 +34,48 @@
     display: flex;
     justify-content: center;
     
-    
+    .ubicacion{
+        align-content: space-around;
+        margin-right:45px;
+        text-align: center;
+        border: 3px solid transparent;
+        align-items: center;
+        img{
+            width: auto;
+            height: 50px;
+            margin: auto;
+            position: relative;
+        }
+        p{
+            width: auto;
+            height: 50px;
+            margin: auto;
+            position: relative;
+        }
+
+    }
 
         .horarios{
+            align-content: space-around;
+            margin-right:45px;
+            text-align: center;
+            border: 3px solid transparent;
+            align-items: center;
+            img{
+                width: auto;
+                height: 50px;
+                margin: auto;
+                position: relative;
+            }
+            p{
+                width: auto;
+                height: 50px;
+                margin: auto;
+                position: relative;
+            }
+    
+        }
+        .telefonos{
             align-content: space-around;
             margin-right:45px;
             text-align: center;

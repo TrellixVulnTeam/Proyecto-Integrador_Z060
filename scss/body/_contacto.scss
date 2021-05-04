@@ -2,45 +2,13 @@
 
 
 
-
-.contacto{
-        display: flex;
-        justify-content: center;
-        
-        flex-direction:row;/* para  que este separado en filas */
-    
-
-        .ubicacion{
-            align-content: space-around;
-            margin-right:45px;
-            text-align: center;
-            border: 3px solid transparent;
-            align-items: center;
-            img{
-                width: auto;
-                height: 50px;
-                margin: auto;
-                position: relative;
-            }
-            p{
-                width: auto;
-                height: 50px;
-                margin: auto;
-                position: relative;
-            }
-    
-        }
-    
-}
-
-
  .contacto{
     display: flex;
     justify-content: center;
     
-    flex-direction:row;/* para  que este separado en filas */
+    
 
-        .horarios{
+       /*  .horarios{
             align-content: space-around;
             margin-right:45px;
             text-align: center;
@@ -59,38 +27,11 @@
                 position: relative;
             }
     
-        }
+        } */
     
 }
 
 
- .contacto{
-    display: flex;
-    justify-content: center;
-    
-    flex-direction:row;/* para  que este separado en filas */
-        .telefonos{
-            align-content: space-around;
-            margin-right:45px;
-            text-align: center;
-            border: 3px solid transparent;
-            align-items: center;
-            img{
-                width: auto;
-                height: 50px;
-                margin: auto;
-                position: relative;
-            }
-            p{
-                width: auto;
-                height: 50px;
-                margin: auto;
-                position: relative;
-            }
-    
-        }
-    
-}
 
 
 

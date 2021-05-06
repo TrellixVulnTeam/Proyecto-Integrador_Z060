@@ -54,10 +54,10 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link" href="#catalogo">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contacto">Contacto</a>
@@ -91,24 +91,65 @@
         </p> 
     </div> 
 
-     <div class="suscrib">
-            <h2>SUSCRÍBETE</h2>
-            <h6>Suscríbete y recibí nuestras promociones</h6>
-            <form action="/SERVER/" method="POST" class="btn-suscribcion">
-                    
-                        
-                <div class="input-group">
-                    <input type="email" class="form-control" id="email" 
-                                aria-describedby="emailHelp" placeholder="ejemplo@gmail.com">
-                    <div class="input-group-append">
-                        <button class="btn btn-danger" type="button">Suscribirme</button>
-                    </div>
-                </div>
-     
-            </form>
-            
-    </div>
+    <section class="suscribite">
+        <div class="titulo-susc">
+            <h3>SUSCRIBITE</h3>
+            <p>Recibi todas nuestras promociones y descuentos</p>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="ejemplo@gmail.com"  aria-describedby="button-addon2">
+            <button class="btn btn-danger" type="button" id="button-addon2">Suscribirme</button>
+        </div>
+    </section>
     
+    
+<!---------------------------------------- _nosotros.scss -------------------------------------------------------->
+    <main>
+            <h2>Sobre Nosotros</h2>
+          
+            <section>
+            
+                <div class="row container-fluid team-1">
+                    <div class=" col-sm-12 col-md-4 col-lg-4">
+                        <h3 class="team-titulo">Lucia Sandoval</h3>   
+                        <img src="imagenes/chef-3.jpg" alt="Lucia Sandoval" class="team-img img-fluid">
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-8"  >
+                        <p class="team-txt">
+                           Lucia Sandoval es una de las Chefs mas prestigiosa del mundo de la Cocina, con tan solo 26 años dirige un equipo 
+                           de mas de 100 empleados.
+                        </p>
+                    </div>
+                    
+                
+                <div class=" row container-fluid team-1">
+                    <div class=" col-sm-12 col-md-4 col-lg-4">
+                        <h3 class="team-titulo">Alfonso Quiroga</h3>   
+                        <img src="imagenes/chef-4.jpg" alt="Alfonso Quiroga" class="team-img img-fluid">
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-8"  >
+                        <p class="team-txt">
+                           Alfonso Quiroga es un pizzero de lujo que sorprende a sus clientes con innovaciones y recetas peculiares.
+                           
+                        </p>
+                    </div>
+                    
+                </div>
+
+        </section>
+
+
+
+            
+       
+    
+          
+          
+
+    
+        
+       
+    </main>  
 
 
     <div id="carouselExampleIndicators" class="carousel-container carousel slide" data-ride="carousel">
@@ -152,10 +193,15 @@
         <div class="container-card">
                 
             <div class="card imgCatalogo" style="width: 18rem;">
-                <img src="imagenes/pizza-de-tomate.jpg" class="card-img-top" alt="Pizza 1">
+                <img src="imagenes/pizza-de-tomate.jpg" class="card-img-top" alt="Pizza de tomate">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Pizza de Tomate</h5>
+                    <ul class="card-text">
+                        <li>Queso cremoso</li>
+                        <li>Tomate</li>
+                        <li>Aceitunas negras</li>
+                        <li>$250</li>
+                    </ul>
                     <button type="button" class="btn btn-outline-danger"><i><img src="imagenes/Iconos/shopping-cart-.ico" alt="agregar al carrito"></i>
                         Agregar al carrito
                     </button>
@@ -165,10 +211,15 @@
 
 
             <div class="card" style="width: 18rem;">
-                <img src="imagenes/pizza-muzzarella.jpg" class="card-img-top" alt="Pizza">
+                <img src="imagenes/pizza-muzzarella.jpg" class="card-img-top" alt="Pizza de Mozzarrellla">
                 <div class="card-body">
-                <h5 class="card-title">Pizza de calabreza</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Pizza de Mozzarrellla.</h5>
+                <ul class="card-text">
+                    <li>Queso mozzarella</li>
+                    <li>Oregano</li>
+                    
+                    <li>$260</li>
+                </ul>                
                 <button type="button" class="btn btn-outline-danger"><i><img src="imagenes/Iconos/shopping-cart-.ico" alt="agregar al carrito"></i>
                     Agregar al carrito
                 </button>
@@ -177,10 +228,16 @@
            
 
             <div class="card" style="width: 18rem;">
-                <img src="imagenes/pizza-pepperoni.jpg" class="card-img-top" alt="Pizza">
+                <img src="imagenes/pizza-pepperoni.jpg" class="card-img-top" alt="Pizza de pepperoni">
                 <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Pizza de Pepperoni</h5>
+                <ul class="card-text">
+                    <li>Queso mozzarella</li>
+                    <li>Pepperoni</li>
+                    <li>Oregano seco</li>
+                    
+                    <li>$270</li>
+                </ul>   
                 <button type="button" class="btn btn-outline-danger"><i><img src="imagenes/Iconos/shopping-cart-.ico" alt="agregar al carrito"></i>
                     Agregar al carrito
                 </button>
@@ -190,10 +247,17 @@
 
 
             <div class="card" style="width: 18rem;">
-                <img src="imagenes/pizza-vegetariana.jpg" class="card-img-top" alt="Pizza">
+                <img src="imagenes/pizza-vegetariana.jpg" class="card-img-top" alt="Pizza Vegetariana">
                 <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Pizza Vegetariana</h5>
+                <ul class="card-text">
+                    <li>Huevo</li>
+                    <li>Morron</li>
+                    <li>Champiniones</li>
+
+                    
+                    <li>$290</li>
+                </ul>                   
                 <button type="button" class="btn btn-outline-danger"><i><img src="imagenes/Iconos/shopping-cart-.ico" alt="agregar al carrito"></i>
                     Agregar al carrito
                 </button>
@@ -203,10 +267,17 @@
 
 
             <div class="card" style="width: 18rem;">
-                <img src="imagenes/pizza-bbq.jpg" class="card-img-top" alt="Pizza de anchoa">
+                <img src="imagenes/pizza-champiniones (2).jpg" class="card-img-top" alt="Pizza de champiniones">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Pizza de Champiniones</h5>
+                    <ul class="card-text">
+                        <li>Oregano</li>
+                        <li>Queso mozzarella</li>
+                        <li>Champiniones</li>
+    
+                        
+                        <li>$300</li>
+                    </ul>  
                     <button type="button" class="btn btn-outline-danger"><i><img src="imagenes/Iconos/shopping-cart-.ico" alt="agregar al carrito"></i>
                         Agregar al carrito
                     </button>
@@ -215,271 +286,63 @@
            
             
             <div class="card" style="width: 18rem;">
-                <img src="imagenes/pizza-1.jpg" class="card-img-top" alt="Pizza">
+                <img src="imagenes/pizza-morron.jpg" class="card-img-top" alt="Pizza de morron">
                 <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Pizza de Morron</h5>
+                <ul class="card-text">
+                    <li>Oregano</li>
+                    <li>Queso mozzarella</li>
+                    <li>Morron rojo</li>
+                    <li>Morron verde</li>
+
+                    
+                    <li>$270</li>
+                </ul> 
                 <button type="button" class="btn btn-outline-danger"><i><img src="imagenes/Iconos/shopping-cart-.ico" alt="agregar al carrito"></i>
                     Agregar al carrito
                 </button>
                 </div>
             </div>
-        </div>      
+            
+        </div>
+        <div class="btn-vermas d-flex justify-content-center w-150px">
+            <a href="productos.html" class="btn btn-danger btn-lg " tabindex="-1" role="button" aria-disabled="true">+ Ver todo el menu</a>
+
+        </div>   
+
+            
+
+     
     </section>
 
    
  
-<!---------------------------------------- _nosotros.scss -------------------------------------------------------->
-        <!-- <main>
-            <h1>SOBRE NOSOTROS</h1>
-             <div class="container">
-                    <div class="row ingredientes">
-                        <div class="col">
-                            <p class="ingredientes-p">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente similique architecto, sit quis a fuga tenetur! Voluptatibus soluta quos placeat libero 
-                                maiores sequi blanditiis nam veniam repudiandae unde, porro sapiente.
-                        
-                            </p>
-                        </div>
-                        <div class="col order">
-                            <img class="ingredientes-img " src="imagenes/ingredientes.jpg" alt="Ingredientes">
-                        </div>
-                    
-                    </div>
-           
-                    <div class="row horno">
-                        <div class="col">
-                            <img class="horno-img"src="imagenes/horno-de-barro.jpg" alt="Horno de barro">
-                        </div>
-                        <div class="col order horno-p">
-                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Ea voluptatum natus sequi a repudiandae aliquid necessitatibus 
-                                recusandae ex tempore rerum, autem, incidunt sunt quia. Inventore 
-                                cupiditate tenetur illum magnam voluptas.
-                            </p>
-                        </div>
-                    
-                    </div>
-            </div>
-            <section>
-                <div class="row team-1 ">
-                    <div class="col-lg-4 col-sm-12 col-md-6">
-                        <h3 class=" team-titulo">Alfonso</h3>   
-                        <img src="imagenes/chef-1.jpg" alt="" class="team-img">
-                        <p class="team-txt">
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                            doloremque nulla eius eum quis et velit fugit aut?
-                        </p>
-                   </div>
-                    
-                        <div class="col-lg-4 col-sm-12 col-md-6 team">
-                            <h3 class=" team-titulo">Alfonso</h3>   
-                            <img src="imagenes/chef-1.jpg" alt="" class="team-img">
-                            <p class="team-txt">
-                                Lorem ipsum dolor sit amet consectetur 
-                                adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                                doloremque nulla eius eum quis et velit fugit aut?
-                            </p>
-                        </div>
-                         
-                                <div class="col-lg-4 col-sm-12 col-md-6">
-                                    <h3 class=" team-titulo">Alfonso</h3>   
-                                    <img src="imagenes/chef-1.jpg" alt="" class="team-img">
-                                    <p class="team-txt">
-                                        Lorem ipsum dolor sit amet consectetur 
-                                        adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                                        doloremque nulla eius eum quis et velit fugit aut?
-                                    </p>
-                                </div>
-                        
-
-                </div> -->
-                    <!-- <div class="row team-1">
-                        <h3 class="team-titulo">Alfonso</h3>   
-                        <img src="imagenes/chef-2.jpg" alt="" class="team-img">
-                        <p class="team-txt">
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                            doloremque nulla eius eum quis et velit fugit aut?
-                        </p>
-                    </div>
-
-                    <div class="row team-1">
-                        <h3 class="team-titulo">Alfonso</h3>   
-                        <img src="imagenes/chef-3.jpg" alt="" class="team-img">
-                        <p class="team-txt">
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                            doloremque nulla eius eum quis et velit fugit aut?
-                        </p>
-                    </div> -->
-
-
-
-                
-            <!-- <section class="grupo our-team">
-                <h2 class="grupo-titulo">Nuestro Equipo</h2>
-                <div class="container container-flex">
-                    <div class="row">
-                        <div class="col col-33">
-                            <h3 class="our-team-titulo">Alfonso</h3>
-                            <img src="imagenes/chef-1.jpg" alt="" class="our-team-img">
-                            <p class="our-team-txt">
-                                Lorem ipsum dolor sit amet consectetur 
-                                adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                                doloremque nulla eius eum quis et velit fugit aut?
-                            </p>
-        
-                        </div>
-                    </div>
-                    
-                    <div class="column column-33">
-                        <h3 class="our-team-titulo">Santiago</h3>
-                        <img src="" alt="" class="our-team-img">
-                        <p class="our-team-txt">Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                            doloremque nulla eius eum quis et velit fugit aut?
-                        </p>
-        
-                    </div>
-                    
-                    <div class="column column-33">
-                        <h3 class="our-team-titulo">Lucia</h3>
-                        <img src="" alt="" class="our-team-img">
-                        <p class="our-team-txt">
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                            doloremque nulla eius eum quis et velit fugit aut?
-                        </p>
-        
-                    </div>
-                    <div class="column column-33">
-                        <h3 class="our-team-titulo">Mateo</h3>
-                        <img src="" alt="" class="our-team-img">
-                        <p class="our-team-txt">
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                            doloremque nulla eius eum quis et velit fugit aut?
-                        </p>
-        
-                    </div>
-                    <div class="column column-33">
-                        <h3 class="our-team-titulo">Rodolfo</h3>
-                        <img src="" alt="" class="our-team-img">
-                        <p class="our-team-txt">
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                            doloremque nulla eius eum quis et velit fugit aut?
-                        </p>
-        
-                    </div>
-                    <div class="column column-33">
-                        <h3 class="our-team-titulo">Julian</h3>
-                        <img src="" alt="" class="our-team-img">
-                        <p class="our-team-txt">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas obcaecati placeat labore dignissimos ipsa fugit, vero ex soluta assumenda iusto voluptate vel perferendis iure.
-                             Molestiae ullam suscipit consequuntur vitae provident!
-                            </p>
-        
-                    </div>
-                    <div class="column column-33">
-                        <h3 class="our-team-titulo">Agustin</h3>
-                        <img src="" alt="" class="our-team-img">
-                        <p class="our-team-txt">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat assumenda nihil, quae veniam enim velit nulla reiciendis obcaecati ipsam saepe, dolore, optio mollitia. 
-                            Cupiditate molestiae natus adipisci sed corporis magnam.
-                        </p>
-        
-                    </div>
-                    <div class="column column-33">
-                        <h3 class="our-team-titulo">Hernan</h3>
-                        <img src="" alt="" class="our-team-img">
-                        <p class="our-team-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, pariatur ad. Maiores, quas, praesentium reprehenderit suscipit illo repellendus dolores dolorem iusto repudiandae distinctio 
-                            ullam molestiae quia ratione excepturi voluptatibus amet!
-                        </p>
-        
-                    </div>
-        
-        
-                </div> -->
-                <!-- <div class="d-flex justify-content-around">
-                    <div class="p-2">
-                        
-                        <h3 class="our-team-titulo">Alfonso</h3>
-                        <img src="imagenes/chef-1.jpg" alt="" class="our-team-img">
-                      -m   <p class="our-team-txt">
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                            doloremque nulla eius eum quis et velit fugit aut?
-                        </p>
-                    </div>
-                    <div class="p-2">
-                        <h3 class="our-team-titulo">Alfonso</h3>
-                        <img src="imagenes/chef-1.jpg" alt="" class="our-team-img">
-                        <p class="our-team-txt">
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                            doloremque nulla eius eum quis et velit fugit aut?
-                        </p>
-                    </div>
-                    <div class="p-2">
-                        <h3 class="our-team-titulo">Alfonso</h3>
-                        <img src="imagenes/chef-1.jpg" alt="" class="our-team-img">
-                        <p class="our-team-txt">
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Repellendus, illo ab officiis voluptatum vero est facilis ad natus incidunt dolor soluta 
-                            doloremque nulla eius eum quis et velit fugit aut?
-                        </p>
-                    </div>
-                  </div> -->
-                  
-                  <!-- responsive variations -->
-                  <!-- <div class="d-flex justify-content-sm-around">
-                    
-                  </div>
-                  <div class="d-flex justify-content-md-around">...</div>
-                  <div class="d-flex justify-content-lg-around">...</div>
-                  <div class="d-flex justify-content-xl-around">...</div> -->
-                  
-        
-        
-   <!--      
-            </section>
-              
-              
-
-        
-            
-           
-        </main>   -->
 <!---------------------------------- _contacto.scc ---------------------------------------------------------------------------------->
 
 
 <section id="contacto">
     
-        <div class="row">
-            <h2 class="col-12">CONTACTO</h2>
-            <h3 class="col-12">Información de contacto</h3>
+        <div class="titulo-contacto">
+            <h2 class="tit">Contacto</h2>
+            <h4 class="sub-tit">Información de contacto</h4>
         </div>
         
   
-        <div class="contacto row ">
+        <div class="contacto-lista ">
             
-                <div class="ubicacion col-sm-12 col-md-6 col-lg-4">
-                    <img src="imagenes/Iconos/ubicacion.png" alt="Ubicación">
+                <div class="ubicacion ">
+                    <img class="imagen img-fluid" src="imagenes/Iconos/ubicacion.png" alt="Ubicación">
                     <h4>Nuestros locales</h4>
                     <p>Av.Rivadavia 7900, Caballito, Buenos Aires, Argentina</p>
                 </div>
-                <div class="horarios col-sm-12 col-md-6 col-lg-4">
-                    <img src="imagenes/Iconos/tienda.png" alt="Horarios">
+                <div class="horarios ">
+                    <img class="imagen img-fluid" src="imagenes/Iconos/tienda.png" alt="Horarios">
                     <h4>Horarios de atención</h4>
                     <p>Martes a Viernes de 10 a 23:30 hs</p>
                     <p>Sábados y Domingos de 10 a 01 hs</p>
                 </div>
-                <div class="telefonos col-sm-12 col-md-6 col-lg-4">
-                    <img src="imagenes/Iconos/telefono.png" alt="Teléfonos">
+                <div class="telefonos ">
+                    <img class="imagen img-fluid" src="imagenes/Iconos/telefono.png" alt="Teléfonos">
                     <h4>Hace tu pedido</h4>
                     <p>(011) 37025735</p>
                     <p>(011) 61929134</p>
@@ -503,13 +366,13 @@
     <!-- FORMULARIO -->
     <div>
         <div class="caja-formulario">
-            <h2>Dejanos un mensaje</h2>
+            <h3>Dejanos un mensaje</h3>
             <p>Contactanos y responderemos a la brevedad</p>
         
             <form action="/SERVER/" method="POST" class="formulario">
                 <div class="form-row">
                     <label class="espacio" for="nameInput">Nombre</label>
-                    <input type="text" id="nameInput" aria-describedby="nameHelp" placeholder="Ingresa tu nombre">
+                    <input type="text" class="form-control" id="nameInput" aria-describedby="nameHelp" placeholder="Ingresa tu nombre">
 
                 </div>
 
@@ -528,9 +391,15 @@
                 </div>
 
                 <div class="form-row">
-                    <label class="espacio" for="area">Mensaje</label>
-                    <textarea  id="area" cols="30" rows="10" placeholder="Escribenos aqui tu mensaje"></textarea>
-
+                    <div class="texto">
+                        <label class="espacio" for="area">Mensaje</label>
+                    </div>
+                   
+                  
+                     <textarea type="area" id="area" aria-describedby="areaHelp" cols="30" rows="10" placeholder="Escribenos aqui tu mensaje"></textarea>
+                   
+                   
+                  
                 </div>
 
                 <div>
@@ -580,14 +449,14 @@
             <div class="navegacion-footer">
                 <h4>Navegación</h4>
                 <ul>
-                    <li><a  href="/">Inicio </a></li>
+                    <li><a  href="index.html">Inicio </a></li>
                     
-                    <li><a  href="productos.html">Productos</a></li>
+                    <li><a  href="#catalogo">Productos</a></li>
 
 
-                    <li><a  href="#">Nosotros</a></li>
+                    <li><a  href="#nosotros">Nosotros</a></li>
 
-                    <li><a  href="#">Contacto </a></li>
+                    <li><a  href="#contacto">Contacto </a></li>
                     
                 </ul>
             </div>

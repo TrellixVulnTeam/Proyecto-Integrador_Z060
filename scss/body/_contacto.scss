@@ -1,16 +1,32 @@
 /* ******************************************** CONTACTOS ********************************* */
+.titulo-contacto{
 
 
- .contacto{
-   
+    .tit{
+        font-size: 30px;
+        font-family:'Kaushan Script', cursive ;
+        text-align:center;
+    }
+    .sub-tit{
+          
+    font-family:'Asap', sans-serif; 
+    font-size: 18px;
+    text-align: center;
+    color:black;
+    line-height: 20px;
+    }
+}
+ .contacto-lista{
+  
     
     .ubicacion{
         
         text-align: center;
         align-items: center;
-        img{
+
+        .imagen{
             width: auto;
-            height:5% ;
+            height:50px;
             
             position: relative;
         }
@@ -25,29 +41,28 @@
         .horarios{
            
             text-align: center;
-/*             border: 1px solid transparent;
- */            align-items: center;
-            img{
+            align-items: center;
+            margin-top: 20px;
+            .imagen{
                 width: auto;
-                height: 5%;
+                height: 50px;
                 
                 position: relative;
             }
             p{
               
-                margin: auto;
+                
                 position: relative;
             }
     
         }
         .telefonos{
-          
+            margin-top: 20px;
             text-align: center;
-/*             border: 1px solid transparent;
- */            align-items: center;
-            img{
+            align-items: center;
+            .imagen{
                 width: auto;
-                height: 5%;
+                height: 50px;
                 
                 position: relative;
             }
@@ -83,7 +98,7 @@
 /************ FORMULARIO **********/
 .caja-formulario{
     color: #5D6063;
-    background-color: yellow;
+    background-color: #c53704 ;
     font-family:'Asap', sans-serif ;
     font-size: 16px;
     
@@ -91,15 +106,25 @@
     flex-direction: column;
     align-items: center;
 
+    h3{
+
+        font-family:'Asap', sans-serif ;
+        font-size: 25px; 
+        color: white;
+    }
+    p{
+        color: white;
+    }
 }
 .formulario{
     text-align: center;
-    background-color: #F6F7F8;
-    border: 1px solid #D6D9DC;
-    border-radius: 3px;
-    width: 80%;
-    margin: 40PX 0;
-    padding: 50px;
+    /* background-color: #F6F7F8; */
+    /* border: 5px solid red; */
+    border-radius: 5px;
+    width: 100%;
+    margin: 20PX 0;
+    padding: 20px;
+    color:white;
 
     h1{
         font-size: 30px;
@@ -122,16 +147,23 @@
 
 /* aclaramos que tipo de input */
 .form-row input[type="text"],
-.form-row input[type="email"]
+.form-row input[type="email"],
+.form-row textarea[type="area"]
+
+
+
 
 {
     background-color: #fff;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
-    width: 75%;
-    padding: 7px;
+    
+    height: 5%;
+    padding: 5px;
 
 }
+
+
 
 /* Para que no se olviden de completar los campos obligatorios */
 .form-row input[type="text"]:invalid,
@@ -139,17 +171,30 @@
     border: 2px solid red;
 }
 
-.form-row textarea{
+
+.form-row{
+    .texto{
+        display: block;
+    }
+
+    textarea{
     resize: none;/* para que el usuario no cambie el tamaño de la caja */
     min-height: 200px;
     width: 50%;
+    display:block;
+    }  
+    .espacio{
+        display: block;
+    }
+
+ 
 }
 
 .button-enviar{
     color: #fff;
     font-size: 16px;
     font-weight: bold;
-    background-color: sandybrown;
+    background-color: rgba(233, 141, 21, 0.993);
     border: none;
     border-radius: 3px;
     padding: 10px 40px;

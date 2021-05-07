@@ -1,338 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-   
+
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
 
-     <!--Vinculamos con CSS-->
-     <link rel="stylesheet" href="css/style.css">
+    <!--Vinculamos con CSS-->
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Productos</title>
 </head>
+
 <body>
-   
 
- <!-- Cuerpo del sitio -->
-    
-    <header >
-       
-            <nav id="menu" class="navbar navbar-expand-lg ">
-                <div  class="container-fluid">
-                    <a class="navbar-brand" href="#">Pizzeria</a>
-                    <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span  class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navegador collapse navbar-collapse " id="navbarNav">
-                        <ul class="navbar-nav  ">
-                            <li class="nav-item active ">
-                                <a class="nav-link" href="index.html">Inicio 
-                                    <span class="sr-only"></span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Contacto</a>
-                            </li>
-    
-                            
-                        </ul>
-                    </div>
-               </div>
-            </nav>
+
+    <!-- Cuerpo del sitio -->
+
+    <header>
+
+        <nav id="menu" class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/Iconos/pizza.png" alt="Pizza Logo">
+                </a>
+                <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i><img src="imagenes/Iconos/menu.png" alt="menu"></i>
+                </button>
+                <div class="navegador collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="index.html">Inicio
+                                <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Contacto</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
- 
+
     <h2 class="titulo-productos">Nuestro Menú</h2>
-    
-    
-    
+
+
+
     <div class="container-card">
-              
-        <div class="card" style="width: 18rem;">
-            <img src="imagenes/pizza-de-tomate.jpg" class="card-img-top" alt="Pizza 1">
+
+        <div class="card color-card" style="width: 18rem;">
+            <img src="imagenes/1.jpg" class="card-img-top" alt="Pizza de morron rojo">
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Ver más
-            </button>
+                <h5 class="card-title">Pizza de Morrón Rojo</h5>
+                <ul class="card-text">
+                    <li>Tomates cherry</li>
+                    <li>Queso mozzarella</li>
+                    <li>Morron rojo</li>
+                    <li>Morron verde</li>
+
+
+                    <li>$270</li>
+                </ul>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"><i><img src="imagenes/Iconos/shopping-cart-.ico"
+                            alt="agregar al carrito"></i>
+                    Agregar al carrito
+                </button>
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Pizza de Morrón</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                    ...
-                    </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+                        <ul class="card-text">
+                            <li>Tomates cherry</li>
+                            <li>Queso mozzarella</li>
+                            <li>Morron rojo</li>
+                            <li>Morron verde</li>
 
 
+                            <li>$270</li>
+                        </ul>
+                        <h6>¿Estas seguro/a de agregarlo al carrito?</h6>
 
-
-
-
-
-
-        <div class="card" style="width: 18rem;">
-            <img src="imagenes/pizza-muzzarella.jpg" class="card-img-top" alt="Pizza">
-            <div class="card-body">
-            <h5 class="card-title">Pizza de calabreza</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Ver más
-            </button>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    ...
-                    </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-        <div class="card" style="width: 18rem;">
-            <img src="imagenes/pizza-pepperoni.jpg" class="card-img-top" alt="Pizza">
-            <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Ver más
-            </button>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    ...
-                    </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-        <div class="card" style="width: 18rem;">
-            <img src="imagenes/pizza-vegetariana.jpg" class="card-img-top" alt="Pizza">
-            <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Ver más
-            </button>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    ...
-                    </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-        <div class="card" style="width: 18rem;">
-            <img src="imagenes/pizza-bbq.jpg" class="card-img-top" alt="Pizza de anchoa">
-            <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Ver más
-            </button>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    ...
-                    </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-
-
-
-
-
-        <div class="card" style="width: 18rem;">
-            <img src="imagenes/pizza-1.jpg" class="card-img-top" alt="Pizza">
-            <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Ver más
-            </button>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                ...
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
-                </div>
-            </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-        <div class="card" style="width: 18rem;">
-            <img src="imagenes/pizza-2.jpg" class="card-img-top" alt="Pizza 2">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Ver más
-            </button>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    ...
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="card" style="width: 18rem;">
-            <img src="imagenes/pizza-hawaiana.jpg" class="card-img-top" alt="Pizza de Peperoni">
+
+
+
+
+
+
+
+
+        <div class="card  color-card" style="width: 18rem;">
+            <img src="imagenes/2.jpg" class="card-img-top" alt="Pizza de Champiniones">
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Pizza de Champiniones</h5>
+                <ul class="card-text">
+                    <li>Oregano</li>
+                    <li>Queso mozzarella</li>
+                    <li>Champiñones</li>
+                    <li>Jamón cocido</li>
+
+
+                    <li>$290</li>
+                </ul>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"><i><img src="imagenes/Iconos/shopping-cart-.ico"
+                            alt="agregar al carrito"></i>
+                    Agregar al carrito
+                </button>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="imagenes/pizza-champiniones.jpg" class="card-img-top" alt="Pizza de Jamón">
-            <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Pizza de Champiniones</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <ul class="card-text">
+                            <li>Oregano</li>
+                            <li>Queso mozzarella</li>
+                            <li>Champiñones</li>
+                            <li>Jamón cocido</li>
+
+
+                            <li>$290</li>
+                        </ul>
+                        <h6>¿Estas seguro/a de agregarlo al carrito?</h6>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
             </div>
-        </div> -->
-    </div> 
+        </div>
 
 
-    
-   
-      
-  
-   
 
-   
+
+
+
+
+
+        <div class="card  color-card" style="width: 18rem;">
+            <img src="imagenes/3.jpg" class="card-img-top" alt="Pizza 4 gustos">
+            <div class="card-body">
+                <h5 class="card-title">Pizza 4 gustos</h5>
+                <ul class="card-text">
+
+                    <li>Queso mozzarella</li>
+                    <li>Aceitunas negras</li>
+                    <li>Jamón cocido</li>
+                    <li>Champiniones</li>
+                    <li>Calabresa</li>
+
+
+                    <li>$300</li>
+                </ul>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"><i><img src="imagenes/Iconos/shopping-cart-.ico"
+                            alt="agregar al carrito"></i>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Pizza 4 gustos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <ul class="card-text">
+                            <li>Queso mozzarella</li>
+                            <li>Aceitunas negras</li>
+                            <li>Jamón cocido</li>
+                            <li>Champiniones</li>
+                            <li>Calabresa</li>
+
+
+                            <li>$300</li>
+                        </ul>
+                        <h6>¿Estas seguro/a de agregarlo al carrito?</h6>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="card  color-card" style="width: 18rem;">
+            <img src="imagenes/4.jpg" class="card-img-top" alt="Pizza de calabreza y jamon">
+            <div class="card-body">
+                <h5 class="card-title">Pizza de calabreza y jamon</h5>
+                <ul class="card-text">
+
+                    <li>Queso mozzarella</li>
+                    <li>Morron rojo</li>
+                    <li>Calabreza</li>
+
+
+                    <li>$280</li>
+                </ul>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"><i><img src="imagenes/Iconos/shopping-cart-.ico"
+                            alt="agregar al carrito"></i>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Pizza de calabreza y jamón</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <ul class="card-text">
+                            <li>Queso mozzarella</li>
+                            <li>Jamón cocido</li>
+
+                            <li>Calabresa</li>
+
+
+                            <li>$275</li>
+                        </ul>
+                        <h6>¿Estas seguro/a de agregarlo al carrito?</h6>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card  color-card" style="width: 18rem;">
+            <img src="imagenes/6.jpg" class="card-img-top" alt="Pizza Especial">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Especial</h5>
+                <ul class="card-text">
+
+                    <li>Queso mozzarella</li>
+                    <li>Champiniones </li>
+                    <li>Jamón crudo</li>
+
+
+                    <li>$280</li>
+                </ul>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"><i><img src="imagenes/Iconos/shopping-cart-.ico"
+                            alt="agregar al carrito"></i>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Pizza Especial</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <ul class="card-text">
+
+                            <li>Queso mozzarella</li>
+                            <li>Champiniones </li>
+                            <li>Jamón crudo</li>
+
+
+                            <li>$280</li>
+                        </ul>
+                        <h6>¿Estas seguro/a de agregarlo al carrito?</h6>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="card color-card" style="width: 18rem;">
+            <img src="imagenes/8.jpg" class="card-img-top" alt="Pizza de Queso Especial">
+            <div class="card-body">
+                <h5 class="card-title">Pizza de Queso Especial</h5>
+                <ul class="card-text">
+
+                    <li>Queso mozzarella</li>
+                    <li>Ajo</li>
+
+
+
+                    <li>$260</li>
+                </ul>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"><i><img src="imagenes/Iconos/shopping-cart-.ico"
+                            alt="agregar al carrito"></i>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Pizza de Queso Especial</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <ul class="card-text">
+
+                            <li>Queso mozzarella</li>
+                            <li>Ajo</li>
+                            <li>Acelga</li>
+
+
+
+                            <li>$260</li>
+                        </ul>
+                        <h6>¿Estas seguro/a de agregarlo al carrito?</h6>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card color-card" style="width: 18rem;">
+            <img src="imagenes/7.jpg" class="card-img-top" alt="Pizza Completa">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Completa</h5>
+
+
+                <ul class="card-text">
+
+                    <li>Queso mozzarella</li>
+                    <li>Papa </li>
+                    <li>Jamón crudo</li>
+                    <li>Trozos de choclo</li>
+
+
+                    <li>$350</li>
+                </ul>
+
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"><i><img src="imagenes/Iconos/shopping-cart-.ico"
+                            alt="agregar al carrito"></i>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Pizza Completa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <ul>
+                            <li>Queso mozzarella</li>
+                            <li>Papa </li>
+                            <li>Jamón crudo</li>
+                            <li>Trozos de choclo</li>
+
+
+                            <li>$350</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
     <!----------------------------------- Footer ------------------------------->
     <footer>
 
@@ -341,15 +481,15 @@
             <div class="navegacion-footer">
                 <h4>Navegación</h4>
                 <ul>
-                    <li><a  href="index.html">Inicio </a></li>
-                    
-                    <li><a  href="productos.html" target="_blank">Productos</a></li>
+                    <li><a href="index.html">Inicio </a></li>
+
+                    <li><a href="productos.html" target="_blank">Productos</a></li>
 
 
-                    <li><a  href="index.html" target="_blank">Nosotros</a></li>
+                    <li><a href="index.html" target="_blank">Nosotros</a></li>
 
-                    <li><a  href="index.html" target="_blank">Contacto </a></li>
-                    
+                    <li><a href="index.html" target="_blank">Contacto </a></li>
+
                 </ul>
             </div>
 
@@ -357,54 +497,55 @@
                 <h4>Contactanos</h4>
                 <h5>Av.Rivadavia 7900</h5>
                 <iframe class="google-maps-footer"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13128.530394415739!2d-58.51089703247968!3d-34.65135406752633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9a9efb944ad%3A0x6247bf5f2d9383c7!2sAv.%20Juan%20Bautista%20Alberdi%20%26%20Larraz%C3%A1bal%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1613150416310!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" 
-                style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13128.530394415739!2d-58.51089703247968!3d-34.65135406752633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9a9efb944ad%3A0x6247bf5f2d9383c7!2sAv.%20Juan%20Bautista%20Alberdi%20%26%20Larraz%C3%A1bal%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1613150416310!5m2!1ses-419!2sar"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0">
                 </iframe>
                 <h5> 1137025735</h5>
                 <h5>pizzahot@gmail.com</h5>
             </div>
-    
 
-            <div class="redes-footer" >
+
+            <div class="redes-footer">
                 <h4>Seguinos en</h4>
-                <a 
-                    href="https://www.facebook.com/juli.quispe.359" target="blank">
+                <a href="https://www.facebook.com/juli.quispe.359" target="blank">
                     <img src="imagenes/Iconos/facebook.png" alt="Facebook">
                 </a>
-                <a 
-                    href="https://www.instagram.com/" target="blank">
+                <a href="https://www.instagram.com/" target="blank">
                     <img src="imagenes/Iconos/instagram.png" alt="Instagram">
                 </a>
-                <a 
-                    href="https://www.youtube.com/channel/UCoNp-l1DMGY58sjHlCzCG0g" target= "blank">
+                <a href="https://www.youtube.com/channel/UCoNp-l1DMGY58sjHlCzCG0g" target="blank">
                     <img src="imagenes/Iconos/youtube.png" alt="YouTube">
                 </a>
-                <a 
-                    href="https://twitter.com/login?lang=es" target="blank">
+                <a href="https://twitter.com/login?lang=es" target="blank">
                     <img src="imagenes/Iconos/twitter.png" alt="Twitter">
                 </a>
-                <a 
-                    href="https://web.whatsapp.com/" target="blank">
+                <a href="https://web.whatsapp.com/" target="blank">
                     <img src="imagenes/Iconos/whatsapp.png" alt="WhatsApp">
 
                 </a>
             </div>
-           
 
-            
+
+
         </div>
     </footer>
 
 
-<!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-</body> 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
